@@ -75,6 +75,7 @@ class HomePageButtons extends StatelessWidget {
                   const Text(
                     'Plant Food',
                     style: TextStyle(
+                      color: Colors.white,
                       fontSize: 15,
                     ),
                   )
@@ -107,8 +108,10 @@ class HomePageButtons extends StatelessWidget {
                     width: 2,
                   ),
                   const Text(
+
                     'Water',
                     style: TextStyle(
+                      color: Colors.white,
                       fontSize: 15,
                     ),
                   )
@@ -143,6 +146,7 @@ class HomePageButtons extends StatelessWidget {
                   const Text(
                     'Cancel',
                     style: TextStyle(
+                      color: Colors.white,
                       fontSize: 15,
                     ),
                   )
