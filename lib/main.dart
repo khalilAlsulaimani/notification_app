@@ -14,12 +14,15 @@ void main() {
         channelShowBadge: true,
         channelDescription: 'Test')
   ]);
+
+
   runApp(AppWidget());
 }
 
 class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(

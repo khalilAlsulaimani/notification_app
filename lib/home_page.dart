@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:flutter/material.dart';
 import 'package:notification_app/plant_stats_page.dart';
@@ -48,6 +50,25 @@ class _HomePageState extends State<HomePage> {
                 ));
       }
     });
+
+
+    // AwesomeNotifications().createdStream.listen((notification) {
+    //   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+    //     content: Text(
+    //       'Notification Created on ${notification.channelKey}',
+    //     ),
+    //   ));
+    // });
+
+    // AwesomeNotifications().actionStream.listen((notification) {
+    //   if(notification.channalKey=='basic_channel' && Platform.isIOS){
+    //
+    //   }
+    //   Navigator.pushAndRemoveUntil(
+    //       context,
+    //       MaterialPageRoute(builder: (_) => PlantStatsPage()),
+    //       (route) => route.isFirst);
+    // });
   }
 
   @override
