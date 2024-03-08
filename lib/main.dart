@@ -2,6 +2,7 @@ import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
+import 'notifiation_controller.dart';
 
 void main() {
   AwesomeNotifications()
@@ -15,7 +16,17 @@ void main() {
         channelDescription: 'Test')
   ]);
 
-
+  AwesomeNotifications().setListeners(
+      onActionReceivedMethod:
+      NotificationController.onNotificationCreatedMethod);
+  AwesomeNotifications().setListeners(
+      onActionReceivedMethod:
+      NotificationController.onNotificationDisplayMethod);
+  AwesomeNotifications().setListeners(
+      onActionReceivedMethod:
+      NotificationController.onDismissActionReceivedMethod);
+  AwesomeNotifications().setListeners(
+      onActionReceivedMethod: NotificationController.onActionReceivedMethod);
   runApp(AppWidget());
 }
 

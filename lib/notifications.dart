@@ -9,7 +9,7 @@ Future<void> createPlantFoodNotification() async {
           title:
               '${Emojis.money_money_bag + Emojis.plant_cactus} Buy Plant Food',
           body: 'Florist at 123 MainStreet has two in stock',
-          bigPicture: 'assets://assets/notification_map.png',
+          //bigPicture: 'assets://assets/notification_map.png',
 
           notificationLayout: NotificationLayout.BigPicture));
 }
